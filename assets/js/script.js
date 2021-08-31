@@ -1,9 +1,8 @@
+$(document).ready(function () {
+
 // Global Variables
     // Today's Date
-
-// Functions
-    // Time Tracker Function
-
+    $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a"));
 
 // Local Storage
 $("8am .input").val(localStorage.getItem("8am"));
@@ -17,16 +16,9 @@ $("3pm .input").val(localStorage.getItem("3pm"));
 $("4pm .input").val(localStorage.getItem("4pm"));
 $("5pm .input").val(localStorage.getItem("5pm"));
 
-
-
-
-
-
-
-
-
-
 // Buttons/Listeners 
-saveBtn.on("click", function() {
-
+$(".saveBtn").on("click", function() {
+    console.log("click");
+    localStorage.setItem();
+})
 })
